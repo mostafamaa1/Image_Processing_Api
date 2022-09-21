@@ -2,8 +2,11 @@
 
 ## Introduction
 
-This is an image processing API Project. Five images can be queried and resized within the browser. 
-To access the images, navigate to localhost:3000/api and enter the valid parameters to see the image resized in the browser. Once the image is resized, a copy will be created in the thumb folder in your local directory.
+This is an image processing API Project. Images can be queried and resized within the browser. 
+
+To access the images, navigate to localhost:3000/api and enter the valid parameters to see the image resized in the browser. 
+
+Once the image is resized, a copy will be created in the thumb folder in your local directory.
 
 
 ## Getting Started
