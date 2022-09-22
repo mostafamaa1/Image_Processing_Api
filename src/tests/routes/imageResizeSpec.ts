@@ -24,7 +24,7 @@ describe('Resize Image suite', (): void => {
     `${filename}_${width}_${height}.jpg`
   );
 
-  it('Image should be processed Successfully!', async () => {
+  it('Image should be processed Successfully!', async (): Promise<void> => {
     await expectAsync(
       resizeImg({
         width,
@@ -35,7 +35,7 @@ describe('Resize Image suite', (): void => {
     ).toBeResolved();
   });
 
-  it('Image must return processedImgPath!', async () =>
+  it('Image must return processedImgPath!', async (): Promise<void> =>
     expect(
       await resizeImg({
         width,
@@ -45,7 +45,7 @@ describe('Resize Image suite', (): void => {
       })
     ).toEqual(processedImgPath));
 
-  it('Should be rejected due to false img path!', async () => {
+  it('Should be rejected due to false img path!', async (): Promise<void> => {
     await expectAsync(
       resizeImg({
         width,
@@ -56,7 +56,7 @@ describe('Resize Image suite', (): void => {
     ).toBeRejected();
   });
 
-  it('Should be falsy if the original image does not exist', async () => {
+  it('Should be falsy if the original image does not exist', async (): Promise<void> => {
     const imgPath = await fs.existsSync('images/original/test.jpg');
     expect(imgPath).toBeFalsy();
   });

@@ -10,7 +10,7 @@ const getDurationInMs = (start: [number, number]): number => {
 };
 
 // middleware logger that shows timestamp, request method, endpoint and status
-const logger = (req: Request, res: Response, next: NextFunction) => {
+const logger = (req: Request, res: Response, next: NextFunction): void => {
   //middleware function
   const current_datetime = new Date();
   const formatted_date =

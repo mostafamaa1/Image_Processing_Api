@@ -14,14 +14,14 @@ app.use(morgan('dev'));
 app.use('/api', routes);
 
 // main page route
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response): void => {
   res.json({
     message: 'Main Page',
   });
 });
 
 // Start the Express Server
-app.listen(PORT, () => {
+app.listen(PORT, (): void => {
   console.log(`Server started at http://localhost:${PORT}`);
 });
 

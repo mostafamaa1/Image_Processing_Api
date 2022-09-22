@@ -51,14 +51,14 @@ This script builds the application and runs testing using jasmine.
 
 ## Endpoint
 
-### `/api/image?filename=<image_name>&width=<image_width>&height=<image_height>`
+### `/api/images?filename=<image_name>&width=<image_width>&height=<image_height>`
 
 * -> Method: `get`
 * -> URL Params: `height` and `width` - the height or width of the image in pixels
 * -> Query Param: `filename` - the specific image you are requesting.
 * -> You can find the Images list using GET `/api/imageslist` as a JSON result
 
-    For example: `localhost:3000/api/image?filename=fjord&width=800&height=400`
+    For example: `localhost:3000/api/images?filename=fjord&width=800&height=400`
 
 #### Available Image options
 
